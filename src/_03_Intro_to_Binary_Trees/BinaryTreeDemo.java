@@ -5,7 +5,7 @@ public class BinaryTreeDemo {
     /*
      * A Binary Tree is a data structure that makes use of nodes and references
      * like a LinkedList, but instead of the nodes pointing to a previous node
-     * or next node in an unorderd list they each points to two child nodes that
+     * or next node in an unordered list they each points to two child nodes that
      * are below them in the hierarchy.
      * 
      * Some important properties of BinaryTree are:
@@ -33,7 +33,17 @@ public class BinaryTreeDemo {
      */
 
     public static void main(String[] args) {
-
+    	BinaryTree<Integer> bt = new BinaryTree<Integer>();
+    	bt.insert(5);
+    	bt.insert(3);
+    	bt.insert(4);
+    	bt.printHorizontal();
+    	bt.printVertical();
+    	Node<Integer> node = bt.getRoot();
+    	bt.recursivePrintHorizontal(node, 5);
+    	bt.search(3);
+    	bt.delete(3);
+    	bt.printHorizontal();
     }
 
 }

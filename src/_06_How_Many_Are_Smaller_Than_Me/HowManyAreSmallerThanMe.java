@@ -15,9 +15,9 @@ public class HowManyAreSmallerThanMe {
      */
 
     public int howManyAreSmallerThanMe(AVLTree<Integer> avlTree, int me) {
-
+    	int[] nums;
+    	AVLNode<Integer> found = avlTree.search(me);
         return 0;
-
     }
 
 }
